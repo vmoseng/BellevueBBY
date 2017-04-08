@@ -1,4 +1,4 @@
-q# PostgreSQL. Versions 9.1 and up are supported.
+# PostgreSQL. Versions 9.1 and up are supported.
 #
 # Install the pg driver:
 #   gem install pg
@@ -79,9 +79,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
- <<: *default
- database: <%= ENV['RDS_DB_NAME'] %>
- username: <%= ENV['RDS_USERNAME'] %>
- password: <%= ENV['RDS_PASSWORD'] %>
- host: <%= ENV['RDS_HOSTNAME'] %>
- port: <%= ENV['RDS_PORT'] %>
+  <<: *default
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
